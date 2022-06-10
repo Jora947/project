@@ -1,24 +1,11 @@
 /*Обнуление*/
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:white;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
 ul li{list-style: none;}
-img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
-body{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:white;
-}
 a{
   color: white;
 }
@@ -37,37 +24,40 @@ a{
     background-color: #000;
  }
 .icon__spotify{
-  padding: 100px 0 0 150px;
+  padding: 100px 0 0 275px;
   background: url("../src/icon.jpg") 32px 8px no-repeat;
-  background-size: 110px 80px;
-}
-.left_content li{
-  padding: 10px 10px 10px 33px;
+  background-size: 204px 85px;
 }
 .left_content{
   margin-left: 13px;
   padding: 25px 0 0 20px;
+  line-height: 2.5;
 }
-.left_content li:nth-child(1){
+.left__main{
   background: url(../src/home.jpg) -2px 1px no-repeat;
+  padding-left: 33px;
   background-size: 30px 30px;
 }
-.left_content li:nth-child(2){
+.left__search{
   background: url(../src/icon2.png) -12px 4px no-repeat;
+  padding-left: 33px;
   background-size: 50px 30px;
 }
-.left_content li:nth-child(3){
+.left__media{
   background: url(../src/med.jpg) -39px -12px no-repeat;
+  padding-left: 33px;
   background-size: 105px 60px;
 }
-.left_content li:nth-child(4){
+.left__playlist{
   margin-top: 35px;
   background: url(../src/krest.jpg) -3px 1px no-repeat;
+  padding-left: 33px;
   background-size: 35px 35px;
 }
-.left_content li:nth-child(5){
+.left__track{
   margin-top: 0px;
   background: url(../src/heart.png) -25px -6px no-repeat;
+  padding-left: 33px;
   background-size: 80px 50px;
 }
  
@@ -92,7 +82,7 @@ a{
     right: 0;
     top: 0;
 }
-.profil span{
+.profil__span{
     color: white;
     font-size: 15px;
 }
@@ -134,10 +124,7 @@ a{
   background: url(../src/heart_trek.png) -10px -11px no-repeat;
   background-size: 100px 100px; 
   background-color: rgb(48, 45, 72);
-}
-
-
-  
+}  
 .main_content {
   grid-row: 3 / 6;
   grid-column: 2 / 5;
@@ -175,5 +162,6 @@ a{
   gap: 20px;
   margin-left: 20px;
   margin-top: 30px;
+  margin-bottom: 20px;
   max-width: 76.5%;
 }
