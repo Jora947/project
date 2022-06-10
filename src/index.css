@@ -1,0 +1,167 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:white;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+a,a:visited{text-decoration: none;}
+ul li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+a{
+  color: white;
+}
+.container{
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-rows: 25px 350px 1fr 25px 25px;
+  }
+
+.navigation {
+    height: 100%;
+    grid-row: 1 / 6;
+    grid-column: 1;
+    background-color: #000;
+ }
+.icon__spotify{
+  padding: 100px 0 0 275px;
+  background: url("../src/icon.jpg") 32px 8px no-repeat;
+  background-size: 204px 85px;
+}
+.left_content{
+  margin-left: 13px;
+  padding: 25px 0 0 20px;
+  line-height: 2.5;
+}
+.left__main{
+  background: url(../src/home.jpg) -2px 1px no-repeat;
+  padding-left: 33px;
+  background-size: 30px 30px;
+}
+.left__search{
+  background: url(../src/icon2.png) -12px 4px no-repeat;
+  padding-left: 33px;
+  background-size: 50px 30px;
+}
+.left__media{
+  background: url(../src/med.jpg) -39px -12px no-repeat;
+  padding-left: 33px;
+  background-size: 105px 60px;
+}
+.left__playlist{
+  margin-top: 35px;
+  background: url(../src/krest.jpg) -3px 1px no-repeat;
+  padding-left: 33px;
+  background-size: 35px 35px;
+}
+.left__track{
+  margin-top: 0px;
+  background: url(../src/heart.png) -25px -6px no-repeat;
+  padding-left: 33px;
+  background-size: 80px 50px;
+}
+ 
+.item-2 {
+  background: linear-gradient(to top, #121212, #131217, #161328, #181433, #1b1542, #1d164d);
+  position: relative;
+  grid-row: 1 / 3;
+  grid-column: 2 / 5;
+  }
+.profil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../src/profil.png) -2px -3px no-repeat;
+    background-size: 45px 45px; 
+    border-radius: 23px;
+    width: 150px;
+    height: 35px;
+    background-color: black;
+    margin: 20px 20px 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.profil__span{
+    color: white;
+    font-size: 15px;
+}
+.arrow{
+  width: 35px;
+  height: 35px;
+}
+.properties{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+  border-radius: 50%;
+}
+.back_button{
+  margin: 20px 0 0 20px;
+}
+.forward_button{
+  margin: 20px 0 0 70px;
+}
+.hello{
+  margin: 115px 0 0 20px;
+  font-size: 30px;
+}
+.mix_content{
+  width: 86.5%;
+  display: grid;
+  grid-template-columns: repeat(3, 0.7fr);
+  grid-template-rows: repeat(3, 90px) ;
+  gap: 20px;
+  margin: 30px 0 0 20px;
+}
+.items{
+  padding: 40px 0 0 80px;
+  color: white;
+  background-color: rgb(48, 45, 72);
+}
+.items:first-child{
+  background: url(../src/heart_trek.png) -10px -11px no-repeat;
+  background-size: 100px 100px; 
+  background-color: rgb(48, 45, 72);
+}  
+.main_content {
+  grid-row: 3 / 6;
+  grid-column: 2 / 5;
+  background-color: rgb(18, 18, 18);
+  }
+.name_of_content{
+  margin:40px 0 0 20px;
+  font-size: 25px;
+  
+}
+.podcast_content{
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  max-width: 86.5%;
+}
+.content_item{
+  padding: 160px 0px 25px 5px;
+  width: 180px;
+  height: 210px;
+  background-color: #181818;
+  min-width: 0;
+}
+.for_you{
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  max-width: 69.5%;
+  flex: 1;
+}
+.listened{
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 86.5%;
+}
