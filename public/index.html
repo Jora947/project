@@ -9,6 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="stylesheet" href="../src/index.css" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -21,17 +22,69 @@
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="container">
+      <nav class="navigation"> 
+      <img src="" alt="" class="icon__spotify">
+      <ul class="left_content">
+        <li class="left__main"><a href="">Главная</a></li>
+        <li class="left__search"><a href="">Поиск</a></li>
+        <li class="left__media"><a href="">Моя медиатека</a></li>
+        <li class="left__playlist"><a href="">Создать плейлист</a></li>
+        <li class="left__track"><a href="">Любимые треки</a></li>
+      </ul>
+     </nav>
+      <div class="item-2">
+        <a class="profil" href="">
+          <span class="profil__span">Профиль</span>
+        </a>
+        <div> <button class="back_button properties"><img src="./arrow_left.png" alt="" class="arrow"></button></div> 
+        <div> <button class="forward_button properties"><img src="./arrow_right.png" alt="" class="arrow"></button></div> 
+        <div class="hello"><h1>Добрый день</h1></div>
+        <section class="mix_content">
+          <div class="items">Любимые треки</div>
+          <div class="items">Микс 1</div>
+          <div class="items">Микс 2</div>
+          <div class="items">Микс 3</div>
+          <div class="items">Микс 4</div>
+          <div class="items"><a href="playlist_song.html">Микс 5</a></div>
+        </section>
+      </div>
+      <div class="main_content"> 
+        <div class="name_of_content"><h2>Выпуски для тебя</h2></div>
+        <section class="podcast_content">
+          <div class="content_item">Подкаст 1</div>
+          <div class="content_item">Подкаст 2</div>
+          <div class="content_item">Подкаст 3</div>
+          <div class="content_item">Подкаст 4</div>
+          <div class="content_item">Подкаст 5</div>
+          <div class="content_item">Подкаст 6</div>
+          <div class="content_item">Подкаст 7</div>
+          <div class="content_item">Подкаст 8</div>
+          <div class="content_item">Подкаст 9</div>
+        </section>
+        <div class="name_of_content"><h2>Только для тебя, User</h2></div>
+        <section class="for_you">
+          <div class="content_item">Микс дня №1</div>
+          <div class="content_item">Микс дня №2</div>
+          <div class="content_item">Микс дня №3</div>
+          <div class="content_item">Микс дня №4</div>
+          <div class="content_item">Микс дня №5</div>
+          <div class="content_item">Открытие недели</div>
+          <div class="content_item">Радар новинок</div>
+        </section>
+        <div class="name_of_content"><h2>Недавно прослушано</h2></div>
+        <section class="listened">
+          <div class="content_item">Группа 1</div>
+          <div class="content_item">Группа 2</div>
+          <div class="content_item">Группа 3</div>
+          <div class="content_item">Группа 4</div>
+          <div class="content_item">Группа 5</div>
+          <div class="content_item">Группа 6</div>
+          <div class="content_item">Группа 7</div>
+          <div class="content_item">Группа 8</div>
+          <div class="content_item">Группа 9</div>
+        </section>
+      </div>   
+    </div>
   </body>
 </html>
